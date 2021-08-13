@@ -1,0 +1,1355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Ajkerhilights">
+    <title>Ajkerhilights</title>
+    <meta name="description" content="Content management system based on Laravel">
+    <meta name="keywords" content="">
+    <link rel="canonical" href="http://localhost:8000/" />
+    <meta property="og:title" content="Ajkerhilights" />
+    <meta property="og:description" content="Content management system based on Laravel" />
+    <meta property="og:site_name" content="Ajkerhilights" />
+    <meta property="og:url" content="http://localhost:8000/" />
+    <meta property="og:image" content="img/cover.png" />
+
+    <meta name="twitter:title" content="Ajkerhilights" />
+    <meta name="twitter:description" content="Content management system based on Laravel" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@" />
+    <meta name="twitter:image" content="img/cover.png" />
+    <script
+        type="application/ld+json">{"@context":"https:\/\/schema.org","@type":"WebPage","name":"Laramagz","description":"Content management system based on Laravel","url":"http:\/\/localhost:8000","image":"https:\/\/magz.retenvi.com\/img\/cover.png"}</script>
+
+    <link rel="alternate" type="application/atom+xml" href="feed" title="Ajkerhilights">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+    <link rel="manifest" href="favicons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="https://magz.retenvi.com/favicons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="google-site-verification" content="DM6yrSbyEPMHikBIGXjUlRDyzjs49GLjXy_wQ3T3SP0">
+    <meta name="csrf-token" content="7stQIMP5qOCOaPQILjmGBpXzCmbrbrCs1wpSSacJ">
+
+    <link rel="stylesheet" href="themes/magz/scripts/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/ionicons/css/ionicons.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/toast/jquery.toast.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/owlcarousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="themes/magz/scripts/magnific-popup/dist/magnific-popup.css">
+    <link rel="stylesheet" href="themes/magz/scripts/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="themes/magz/css/style.css">
+    <link rel="stylesheet" href="themes/magz/css/skins/all.css">
+    <link rel="stylesheet" href="themes/magz/css/demo.css">
+    <link rel="stylesheet" href="vendor/prism.js/prism.css">
+    <link rel="stylesheet" href="themes/magz/css/progress.css">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166274905-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-166274905-1');
+    </script>
+
+    <!-- Mailchimp -->
+    <script id="mcjs">
+        ! function (c, h, i, m, p) {
+            m = c.createElement(h), p = c.getElementsByTagName(h)[0], m.async = 1, m.src = i, p.parentNode.insertBefore(m, p)
+        }(document, "script", "../chimpstatic.com/mcjs-connected/js/users/dce4ca90b74e9fafbfb2697a6/b08078aa3fbf02461cb5d711e.js");
+    </script>
+
+    <script src="../www.google.com/recaptcha/apid41d.js?" async defer></script>
+
+
+</head>
+
+<body class="skin-orange">
+    <!-- Header -->
+    <header class="primary">
+        <div class="firstbar">
+            <div class="container">
+                <div class="row">
+                    <div class="hidden-xs col-md-3 col-sm-12">
+                        <div class="brand">
+                            <a href="index.html">
+                                <img src="themes/magz/images/logo.png" alt="Web Logo">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <form action="https://magz.retenvi.com/search" method="GET" class="search" autocomplete="off">
+                            <div class="form-group">
+                                <div class="input-group">
+                                    <input type="text" name="q" class="form-control" placeholder="Type something here">
+                                    <div class="input-group-btn">
+                                        <button type="submit" class="btn btn-primary"><i
+                                                class="ion-search"></i></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Start nav -->
+        <nav class="menu">
+            <div class="container">
+                <div class="brand">
+                    <a href="index.html">
+                        <img src="themes/magz/images/logo.png" alt="Web Logo">
+                    </a>
+                </div>
+                <div class="mobile-toggle">
+                    <a href="#" data-toggle="menu" data-target="#menu-list"><i class="ion-navicon-round"></i></a>
+                </div>
+                <div class="mobile-toggle">
+                    <a href="#" data-toggle="sidebar" data-target="#sidebar"><i class="ion-ios-arrow-left"></i></a>
+                </div>
+                <!-- <div id="menu-list">
+                    <ul class="nav-list">
+                        <li class="">
+                            <a href="index.html" title="">Home </a>
+                        </li>
+                        <li class="">
+                            <a href="category/news.html" title="">News </a>
+                        </li>
+                        <li class="">
+                            <a href="category/technology.html" title="">Tech </a>
+                        </li>
+                        <li class="">
+                            <a href="page/about.html" title="">About </a>
+                        </li>
+                        <li class="">
+                            <a href="contact.html" title="">Contact </a>
+                        </li>
+                    </ul>
+                </div>  -->
+                <div id="menu-list">
+                    <div class="menu-container">
+                        <div class="menu">
+                            <ul class="clearfix">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">News</a></li>
+                                <li><a href="#">Busness</a></li>
+                                <li><a href="#">Magazin</a></li>
+                                <li><a href="#">Sport</a></li>
+                                <li><a href="#">Arts</a></li>
+                                <li><a href="#">Culture</a>
+                                    <ul>
+                                        <li><a href="#">School</a>
+                                            <ul>
+                                                <li><a href="#">Lidership</a></li>
+                                                <li><a href="#">History</a></li>
+                                                <li><a href="#">Locations</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Study</a>
+                                            <ul>
+                                                <li><a href="#">Undergraduate</a></li>
+                                                <li><a href="#">Masters</a></li>
+                                                <li><a href="#">International</a></li>
+                                                <li><a href="#">Online</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Research</a>
+                                            <ul>
+                                                <li><a href="#">Undergraduate research</a></li>
+                                                <li><a href="#">Masters research</a></li>
+                                                <li><a href="#">Funding</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Something</a>
+                                            <ul>
+                                                <li><img src="https://placeimg.com/300/200/nature"></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Politics</a>
+                                    <ul>
+                                        <li><a href="#">Today</a></li>
+                                        <li><a href="#">Calendar</a></li>
+                                        <li><a href="#">Sport</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Style</a>
+                                    <ul>
+                                        <li><a href="#">School</a>
+                                            <ul>
+                                                <li><a href="#">Lidership</a></li>
+                                                <li><a href="#">History</a></li>
+                                                <li><a href="#">Locations</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Study</a>
+                                            <ul>
+                                                <li><a href="#">Undergraduate</a></li>
+                                                <li><a href="#">Masters</a></li>
+                                                <li><a href="#">International</a></li>
+                                                <li><a href="#">Online</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Study</a>
+                                            <ul>
+                                                <li><img src="image/news-EvOoOp7KPL.jpg" alt=""></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">Empty sub</a>
+                                            <ul>
+                                                <li><img src="https://placeimg.com/300/200/people"></li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li><a href="#">Travel</a>
+                                    <ul>
+                                        <!-- <li><a href="#">School</a>
+                                            <ul>
+                                                <li><a href="#">Lidership</a></li>
+                                                <li><a href="#">History</a></li>
+                                                <li><a href="#">Locations</a></li>
+                                                <li><a href="#">Careers</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <li><a href="#">School</a>
+                                                    <ul>
+                                                        <li><a href="#">Lidership</a></li>
+                                                        <li><a href="#">History</a></li>
+                                                        <li><a href="#">Locations</a></li>
+                                                        <li><a href="#">Careers</a></li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><a href="#">School</a>
+                                                    <ul>
+                                                        <img src="image/ilex-fw5IGRVDPj.jpg" alt="">
+
+
+                                                        <h4><a href="#">We asked the best: male influencers talk
+                                                                pricing</a></h4>
+                                                        <h6>Emilio Montes - December 10, 2019</h6>
+
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <li><a href="#">School</a>
+                                                    <ul>
+                                                        <li><a href="#">Lidership</a></li>
+                                                        <li><a href="#">History</a></li>
+                                                        <li><a href="#">Locations</a></li>
+                                                        <li><a href="#">Careers</a></li>
+                                                    </ul>
+                                                </li>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+        </nav>
+
+        <!-- End nav -->
+    </header>
+
+    <!-- Content -->
+    <section class="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-12 col-xs-12">
+                    <div class="headline">
+                        <div class="nav" id="headline-nav">
+                            <a class="left carousel-control" role="button" data-slide="prev">
+                                <span class="ion-ios-arrow-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" role="button" data-slide="next">
+                                <span class="ion-ios-arrow-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                        <div class="owl-carousel owl-theme" id="headline">
+                            <div class="item">
+                                <a href="news/envato-top-digital-assets-and-services.html">
+                                    <div class="badge">
+                                        Marketplace
+                                    </div>
+                                    Envato - Top Digital Assets And Services
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                    <div class="badge">
+                                        Technology
+                                    </div>
+                                    Bootstrap 5 Alpha Finally Launched!
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a
+                                    href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                    <div class="badge">
+                                        News
+                                    </div>
+                                    Singapore Fintech Startup Raises Seed Funding To Digitize Corporate Loans
+                                </a>
+                            </div>
+                            <div class="item">
+                                <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                    <div class="badge">
+                                        Technology
+                                    </div>
+                                    Joy Is A Net Of Love By Which You Can Catch Souls
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="owl-carousel owl-theme slide" id="featured">
+                        <div class="item">
+                            <article class="featured">
+                                <div class="overlay"></div>
+                                <figure>
+                                    <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                        alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                </figure>
+                                <div class="details">
+                                    <div class="category">
+                                        <a href="category/marketplace.html">
+                                            Marketplace
+                                        </a>
+                                    </div>
+                                    <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top Digital
+                                            Assets And Services</a></h1>
+                                    <div class="time">June 20, 2020</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <article class="featured">
+                                <div class="overlay"></div>
+                                <figure>
+                                    <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                        alt="v5-new-logo-juUpLoxSMz.png">
+                                </figure>
+                                <div class="details">
+                                    <div class="category">
+                                        <a href="category/technology.html">
+                                            Technology
+                                        </a>
+                                    </div>
+                                    <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha Finally
+                                            Launched!</a></h1>
+                                    <div class="time">June 20, 2020</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <article class="featured">
+                                <div class="overlay"></div>
+                                <figure>
+                                    <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg">
+                                </figure>
+                                <div class="details">
+                                    <div class="category">
+                                        <a href="category/news.html">
+                                            News
+                                        </a>
+                                    </div>
+                                    <h1><a
+                                            href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                            Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a></h1>
+                                    <div class="time">June 19, 2020</div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="item">
+                            <article class="featured">
+                                <div class="overlay"></div>
+                                <figure>
+                                    <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                        alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                </figure>
+                                <div class="details">
+                                    <div class="category">
+                                        <a href="category/technology.html">
+                                            Technology
+                                        </a>
+                                    </div>
+                                    <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy Is A
+                                            Net Of Love By Which You Can Catch Souls</a></h1>
+                                    <div class="time">June 19, 2020</div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="line">
+                        <div>Latest News</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <article class="article col-md-12">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/envato-top-digital-assets-and-services.html">
+                                            <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <div class="detail">
+                                            <div class="time">June 20, 2020</div>
+                                            <div class="category">
+                                                <a href="category/marketplace.html">
+                                                    Marketplace
+                                                </a>
+                                            </div>
+                                            <li>127 Views</li>
+                                        </div>
+                                        <h2><a href="news/envato-top-digital-assets-and-services.html">Envato - Top
+                                                Digital Assets And Services</a>
+                                        </h2>
+                                        Millions of people around the world choose our marketplace, studio and courses
+                                        to buy files, hire freelancers, or learn the skills needed to build websites,
+                                        videos, apps, graphics and more.We’re a values-based organization focused on
+                                        community, entre...
+                                        <footer>
+                                            <a href="javascript:void(0);" class="love" data-id="q2"><i
+                                                    class="ion-android-favorite-outline"></i>
+                                                <div>0</div>
+                                            </a>
+                                            <a class="btn btn-primary more"
+                                                href="news/envato-top-digital-assets-and-services.html">
+                                                <div>More</div>
+                                                <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <article class="article col-md-12">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                            <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                                alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <div class="detail">
+                                            <div class="time">June 20, 2020</div>
+                                            <div class="category">
+                                                <a href="category/technology.html">
+                                                    Technology
+                                                </a>
+                                            </div>
+                                            <li>128 Views</li>
+                                        </div>
+                                        <h2><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha
+                                                Finally Launched!</a>
+                                        </h2>
+                                        We’ve been focused on making the migration from v4 to v5 more approachable, but
+                                        we’ve also not been afraid to step away from what’s outdated or no longer
+                                        appropriate. As such, we’re very happy to say that with v5, Bootstrap no longer
+                                        depends on jQuer...
+                                        <footer>
+                                            <a href="javascript:void(0);" class="love" data-id="rE"><i
+                                                    class="ion-android-favorite-outline"></i>
+                                                <div>0</div>
+                                            </a>
+                                            <a class="btn btn-primary more"
+                                                href="news/bootstrap-5-alpha-finally-launched.html">
+                                                <div>More</div>
+                                                <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <article class="article col-md-12">
+                                <div class="inner">
+                                    <figure>
+                                        <a
+                                            href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                            <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                                alt="ilex-fw5IGRVDPj.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <div class="detail">
+                                            <div class="time">June 19, 2020</div>
+                                            <div class="category">
+                                                <a href="category/news.html">
+                                                    News
+                                                </a>
+                                            </div>
+                                            <li>99 Views</li>
+                                        </div>
+                                        <h2><a
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                                Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a>
+                                        </h2>
+                                        Singapore-based iLex, which aims to transform the corporate lending market,
+                                        announced that it has raised an undisclosed amount of seed funding from
+                                        strategic investors in France, Hong Kong, Singapore, and the US.The startup,
+                                        which was launched just l...
+                                        <footer>
+                                            <a href="javascript:void(0);" class="love" data-id="p2"><i
+                                                    class="ion-android-favorite-outline"></i>
+                                                <div>1</div>
+                                            </a>
+                                            <a class="btn btn-primary more"
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                                <div>More</div>
+                                                <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">
+                            <article class="article col-md-12">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                            <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <div class="detail">
+                                            <div class="time">June 19, 2020</div>
+                                            <div class="category">
+                                                <a href="category/technology.html">
+                                                    Technology
+                                                </a>
+                                            </div>
+                                            <li>93 Views</li>
+                                        </div>
+                                        <h2><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy Is
+                                                A Net Of Love By Which You Can Catch Souls</a>
+                                        </h2>
+                                        My first reaction is what beauty? I’ve definitely crossed over to the invisible
+                                        side. I rather prefer it that way&mldr;My whole life my weight has fluctuated
+                                        quite a bit and my self-image with it. When I’ve been fat, I’ve been ugly — at
+                                        least in my m...
+                                        <footer>
+                                            <a href="javascript:void(0);" class="love" data-id="l5"><i
+                                                    class="ion-android-favorite-outline"></i>
+                                                <div>3</div>
+                                            </a>
+                                            <a class="btn btn-primary more"
+                                                href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                                <div>More</div>
+                                                <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                            </a>
+                                        </footer>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <div class="banner">
+                        <a href="#" target="_blank">
+                            <img src="ad/750x80.png">
+                        </a>
+                    </div>
+
+                    <div class="line transparent little"></div>
+                    <div class="row">
+                        <div class="col-md-6 col-sm-6 trending-tags">
+                            <h1 class="title-col">Trending Tags</h1>
+                            <div class="body-col">
+                                <ol class="tags-list">
+                                    <li><a href="tag/beauty.html">Beauty</a></li>
+                                    <li><a href="tag/explore-bali.html">Explore Bali</a></li>
+                                    <li><a href="tag/untag.html">Untag</a></li>
+                                    <li><a href="tag/social-media.html">Social Media</a></li>
+                                    <li><a href="tag/facebook.html">Facebook</a></li>
+                                    <li><a href="tag/donald-trump.html">Donald Trump</a></li>
+                                    <li><a href="tag/united-states.html">United States</a></li>
+                                    <li><a href="tag/china.html">China</a></li>
+                                    <li><a href="tag/fashion.html">Fashion</a></li>
+                                    <li><a href="tag/lifestyle.html">Lifestyle</a></li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6">
+                            <h1 class="title-col">
+                                Hot News
+                                <div class="carousel-nav" id="hot-news-nav">
+                                    <div class="prev">
+                                        <i class="ion-ios-arrow-left"></i>
+                                    </div>
+                                    <div class="next">
+                                        <i class="ion-ios-arrow-right"></i>
+                                    </div>
+                                </div>
+                            </h1>
+                            <div class="body-col vertical-slider" data-max="4" data-nav="#hot-news-nav"
+                                data-item="article">
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                                <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                                    alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha
+                                                    Finally Launched!</a></h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/technology.html">
+                                                        Technology
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 20, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/envato-top-digital-assets-and-services.html">
+                                                <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top
+                                                    Digital Assets And Services</a></h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/marketplace.html">
+                                                        Marketplace
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 20, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                                <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                                    alt="ilex-fw5IGRVDPj.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a
+                                                    href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                                    Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a>
+                                            </h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/news.html">
+                                                        News
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 19, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                                <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy
+                                                    Is A Net Of Love By Which You Can Catch Souls</a></h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/technology.html">
+                                                        Technology
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 19, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="line top">
+                        <div>Just Another News</div>
+                    </div>
+                    <div class="row">
+                        <article class="col-md-12 article-list">
+                            <div class="inner">
+                                <figure>
+                                    <a href="news/envato-top-digital-assets-and-services.html">
+                                        <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                            alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                            alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                    </a>
+                                </figure>
+                                <div class="details">
+                                    <div class="detail">
+                                        <div class="category">
+                                            <a href="category/marketplace.html">
+                                                Marketplace
+                                            </a>
+                                        </div>
+                                        <div class="time">June 20, 2020</div>
+                                    </div>
+                                    <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top Digital
+                                            Assets And Services</a></h1>
+                                    <p>
+                                        Millions of people around the world choose our marketplace, studio and courses
+                                        to buy files, hire fr...
+                                    </p>
+                                    <footer>
+                                        <a href="javascript:void(0);" class="love" data-id="q2"><i
+                                                class="ion-android-favorite-outline"></i>
+                                            <div>0</div>
+                                        </a>
+                                        <a class="btn btn-primary more"
+                                            href="news/envato-top-digital-assets-and-services.html">
+                                            <div>More</div>
+                                            <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-12 article-list">
+                            <div class="inner">
+                                <figure>
+                                    <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                        <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                            alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                    </a>
+                                </figure>
+                                <div class="details">
+                                    <div class="detail">
+                                        <div class="category">
+                                            <a href="category/technology.html">
+                                                Technology
+                                            </a>
+                                        </div>
+                                        <div class="time">June 20, 2020</div>
+                                    </div>
+                                    <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha Finally
+                                            Launched!</a></h1>
+                                    <p>
+                                        We’ve been focused on making the migration from v4 to v5 more approachable, but
+                                        we’ve also not been...
+                                    </p>
+                                    <footer>
+                                        <a href="javascript:void(0);" class="love" data-id="rE"><i
+                                                class="ion-android-favorite-outline"></i>
+                                            <div>0</div>
+                                        </a>
+                                        <a class="btn btn-primary more"
+                                            href="news/bootstrap-5-alpha-finally-launched.html">
+                                            <div>More</div>
+                                            <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-12 article-list">
+                            <div class="inner">
+                                <figure>
+                                    <a
+                                        href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                        <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                            alt="ilex-fw5IGRVDPj.jpg">
+                                    </a>
+                                </figure>
+                                <div class="details">
+                                    <div class="detail">
+                                        <div class="category">
+                                            <a href="category/news.html">
+                                                News
+                                            </a>
+                                        </div>
+                                        <div class="time">June 19, 2020</div>
+                                    </div>
+                                    <h1><a
+                                            href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                            Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a></h1>
+                                    <p>
+                                        Singapore-based iLex, which aims to transform the corporate lending market,
+                                        announced that it has ra...
+                                    </p>
+                                    <footer>
+                                        <a href="javascript:void(0);" class="love" data-id="p2"><i
+                                                class="ion-android-favorite-outline"></i>
+                                            <div>1</div>
+                                        </a>
+                                        <a class="btn btn-primary more"
+                                            href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                            <div>More</div>
+                                            <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                        <article class="col-md-12 article-list">
+                            <div class="inner">
+                                <figure>
+                                    <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                        <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                            alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                            alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                    </a>
+                                </figure>
+                                <div class="details">
+                                    <div class="detail">
+                                        <div class="category">
+                                            <a href="category/technology.html">
+                                                Technology
+                                            </a>
+                                        </div>
+                                        <div class="time">June 19, 2020</div>
+                                    </div>
+                                    <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy Is A
+                                            Net Of Love By Which You Can Catch Souls</a></h1>
+                                    <p>
+                                        My first reaction is what beauty? I’ve definitely crossed over to the invisible
+                                        side. I rather prefe...
+                                    </p>
+                                    <footer>
+                                        <a href="javascript:void(0);" class="love" data-id="l5"><i
+                                                class="ion-android-favorite-outline"></i>
+                                            <div>3</div>
+                                        </a>
+                                        <a class="btn btn-primary more"
+                                            href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                            <div>More</div>
+                                            <div><i class="ion-ios-arrow-thin-right"></i></div>
+                                        </a>
+                                    </footer>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="col-xs-6 col-md-4 sidebar" id="sidebar">
+                    <div class="sidebar-title for-tablet">Sidebar</div>
+                    <aside>
+                        <h1 class="aside-title">Popular <a href="popular/news.html" class="all">See All <i
+                                    class="ion-ios-arrow-right"></i></a></h1>
+                        <div class="aside-body">
+                            <article class="article-mini">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                            <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                                alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha
+                                                Finally Launched!</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-mini">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/envato-top-digital-assets-and-services.html">
+                                            <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top
+                                                Digital Assets And Services</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-mini">
+                                <div class="inner">
+                                    <figure>
+                                        <a
+                                            href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                            <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                                alt="ilex-fw5IGRVDPj.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <h1><a
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                                Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </article>
+                            <article class="article-mini">
+                                <div class="inner">
+                                    <figure>
+                                        <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                            <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                        </a>
+                                    </figure>
+                                    <div class="padding">
+                                        <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy Is
+                                                A Net Of Love By Which You Can Catch Souls</a>
+                                        </h1>
+                                    </div>
+                                </div>
+                            </article>
+                        </div>
+                    </aside>
+                    <aside>
+                        <div class="aside-body">
+                            <form class="newsletter">
+                                <div class="icon">
+                                    <i class="ion-ios-email-outline"></i>
+                                    <h1>Newsletter</h1>
+                                </div>
+                                <div class="input-group">
+                                    <input type="email" name="email" class="form-control email" placeholder="Your mail">
+                                    <div class="input-group-btn">
+                                        <button class="btn btn-primary"><i class="ion-paper-airplane"></i></button>
+                                    </div>
+                                </div>
+                                <p>By subscribing you will receive new articles in your email.</p>
+                            </form>
+                        </div>
+                    </aside>
+                    <aside>
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="active">
+                                <a href="#recomended" aria-controls="recomended" role="tab" data-toggle="tab">
+                                    <i class="ion-android-star-outline"></i> Recomended
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="recomended">
+                                <article class="article-fw">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                                <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                                    alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                            </a>
+                                        </figure>
+                                        <div class="details">
+                                            <div class="detail">
+                                                <div class="time">June 20, 2020</div>
+                                                <div class="category">
+                                                    <a href="category/technology.html">
+                                                        Technology
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha
+                                                    Finally Launched!</a>
+                                            </h1>
+                                            We’ve been focused on making the migration from v4 to v5 more approachable,
+                                            but we’ve also not been...
+                                        </div>
+                                    </div>
+                                </article>
+                                <div class="line"></div>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/envato-top-digital-assets-and-services.html">
+                                                <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top
+                                                    Digital Assets And Services</a>
+                                            </h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/marketplace.html">
+                                                        Marketplace
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 20, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                                <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                                    alt="ilex-fw5IGRVDPj.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a
+                                                    href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                                    Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a>
+                                            </h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/news.html">
+                                                        News
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 19, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                                <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy
+                                                    Is A Net Of Love By Which You Can Catch Souls</a>
+                                            </h1>
+                                            <div class="detail">
+                                                <div class="category">
+                                                    <a href="category/technology.html">
+                                                        Technology
+                                                    </a>
+                                                </div>
+                                                <div class="time">June 19, 2020</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </aside>
+                    <aside id="sponsored">
+                        <h1 class="aside-title">Sponsored</h1>
+                        <div class="aside-body">
+                            <figure class="ads">
+                                <a href="#" target="_blank">
+                                    <img src="ad/350x300.png">
+                                </a>
+                            </figure>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Start footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="block">
+                        <h1 class="block-title">Company Info</h1>
+                        <div class="block-body">
+                            <figure class="foot-logo">
+                                <img src="themes/magz/images/logo-light.png" alt="Web Logo">
+                            </figure>
+                            <p class="brand-description">
+                                Content management system based on Laravel
+                            </p>
+                            <a href="page/about.html" class="btn btn-magz white">About Us <i
+                                    class="ion-ios-arrow-thin-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="block">
+                        <h1 class="block-title">Follow Us</h1>
+                        <div class="block-body">
+                            <p>Follow us and stay in touch to get the latest news</p>
+                            <ul class="social trp">
+                                <li>
+                                    <a href="https://www.facebook.com/" class="facebook">
+                                        <svg>
+                                            <rect width="0" height="0" />
+                                        </svg>
+                                        <i class="ion-social-facebook"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.twitter.com/" class="twitter">
+                                        <svg>
+                                            <rect width="0" height="0" />
+                                        </svg>
+                                        <i class="ion-social-twitter-outline"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.youtube.com/channel/" class="youtube">
+                                        <svg>
+                                            <rect width="0" height="0" />
+                                        </svg>
+                                        <i class="ion-social-youtube-outline"></i>
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://www.instagram.com/retenvi_" class="instagram">
+                                        <svg>
+                                            <rect width="0" height="0" />
+                                        </svg>
+                                        <i class="ion-social-instagram-outline"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="block">
+                        <div class="block-body no-margin">
+                            <ul class="footer-nav-horizontal">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                                <li><a href="page/about.html">About</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="block">
+                        <h1 class="block-title">Popular Tags <div class="right"><a href="#">See All <i
+                                        class="ion-ios-arrow-thin-right"></i></a></div>
+                        </h1>
+                        <div class="block-body">
+                            <ul class="tags">
+                                <li><a href="tag/beauty.html">Beauty</a></li>
+                                <li><a href="tag/explore-bali.html">Explore Bali</a></li>
+                                <li><a href="tag/untag.html">Untag</a></li>
+                                <li><a href="tag/social-media.html">Social Media</a></li>
+                                <li><a href="tag/facebook.html">Facebook</a></li>
+                                <li><a href="tag/donald-trump.html">Donald Trump</a></li>
+                                <li><a href="tag/united-states.html">United States</a></li>
+                                <li><a href="tag/china.html">China</a></li>
+                                <li><a href="tag/fashion.html">Fashion</a></li>
+                                <li><a href="tag/lifestyle.html">Lifestyle</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <div class="block">
+                        <h1 class="block-title">Newsletter</h1>
+                        <div class="block-body">
+                            <p>By subscribing you will receive new articles in your email.</p>
+                            <form class="newsletter">
+                                <div class="input-group">
+                                    <div class="input-group-addon">
+                                        <i class="ion-ios-email-outline"></i>
+                                    </div>
+                                    <input type="email" name="email" class="form-control email" placeholder="Your mail">
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block white">Subscribe</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-xs-12">
+                    <div class="block">
+                        <div class="block">
+                            <h1 class="block-title">Latest News</h1>
+                            <div class="block-body">
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/envato-top-digital-assets-and-services.html">
+                                                <img src="get/post/image/envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg"
+                                                    alt="envato-logo-vector-download-UiJ9Fc7bdT.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/envato-top-digital-assets-and-services.html">Envato - Top
+                                                    Digital Assets And Services</a></h1>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/bootstrap-5-alpha-finally-launched.html">
+                                                <img src="get/post/image/v5-new-logo-juUpLoxSMz.png"
+                                                    alt="v5-new-logo-juUpLoxSMz.png" alt="v5-new-logo-juUpLoxSMz.png">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/bootstrap-5-alpha-finally-launched.html">Bootstrap 5 Alpha
+                                                    Finally Launched!</a></h1>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a
+                                                href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">
+                                                <img src="get/post/image/ilex-fw5IGRVDPj.jpg" alt="ilex-fw5IGRVDPj.jpg"
+                                                    alt="ilex-fw5IGRVDPj.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a
+                                                    href="news/singapore-fintech-startup-raises-seed-funding-to-digitize-corporate-loans.html">Singapore
+                                                    Fintech Startup Raises Seed Funding To Digitize Corporate Loans</a>
+                                            </h1>
+                                        </div>
+                                    </div>
+                                </article>
+                                <article class="article-mini">
+                                    <div class="inner">
+                                        <figure>
+                                            <a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">
+                                                <img src="get/post/image/uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg"
+                                                    alt="uriel-soberanes-MxVkWPiJALs-unsplash-e1571990517626-800x400-eUN6hq0FsQ.jpg">
+                                            </a>
+                                        </figure>
+                                        <div class="padding">
+                                            <h1><a href="news/joy-is-a-net-of-love-by-which-you-can-catch-souls.html">Joy
+                                                    Is A Net Of Love By Which You Can Catch Souls</a></h1>
+                                        </div>
+                                    </div>
+                                </article>
+                                <a href="news/latest.html" class="btn btn-magz white btn-block">See All <i
+                                        class="ion-ios-arrow-thin-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="copyright">
+                        COPYRIGHT &copy; Retenvi . ALL RIGHT RESERVED.
+                        <div>
+                            Design by <a href="https://kodinger.com/">Kodinger</a>, Developed by <a
+                                href="https://retenvi.com/">Retenvi</a><br>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- JS -->
+    <script src="themes/magz/js/jquery-3.5.1.min.js"></script>
+    <script src="themes/magz/js/jquery-migrate-3.3.1.min.js"></script>
+    <script src="themes/magz/scripts/bootstrap/bootstrap.min.js"></script>
+    <script>
+        let $target_end = $(".best-of-the-week");
+    </script>
+    <script src="themes/magz/scripts/jquery-number/jquery.number.min.js"></script>
+    <script src="themes/magz/scripts/owlcarousel/dist/owl.carousel.min.js"></script>
+    <script src="themes/magz/scripts/magnific-popup/dist/jquery.magnific-popup.min.js"></script>
+    <script src="themes/magz/scripts/easescroll/jquery.easeScroll.js"></script>
+    <script src="themes/magz/scripts/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="themes/magz/scripts/toast/jquery.toast.min.js"></script>
+    <script src="themes/magz/js/demo.js"></script>
+    <script src="themes/magz/js/e-magz.js"></script>
+    <script src="vendor/prism.js/prism.js"></script>
+    <script src="js/share.js"></script>
+    <script src="vendor/pace-progress/pace.min.js"></script>
+    <script src="js/share.js"></script>
+    <!-- Droep down mega menu  -->
+    <script>
+        $(document).ready(function () {
+            "use strict";
+            $('.menu > ul > li:has( > ul)').addClass('menu-dropdown-icon');
+            $('.menu > ul > li > ul:not(:has(ul))').addClass('normal-sub');
+            $(".menu > ul").before("<a href=\"#\" class=\"menu-mobile\">&nbsp;</a>");
+            $(".menu > ul > li").hover(function (e) {
+                if ($(window).width() > 943) {
+                    $(this).children("ul").stop(true, false).fadeToggle(150);
+                    e.preventDefault();
+                }
+            });
+            $(".menu > ul > li").click(function () {
+                if ($(window).width() <= 943) {
+                    $(this).children("ul").fadeToggle(150);
+                }
+            });
+            $(".menu-mobile").click(function (e) {
+                $(".menu > ul").toggleClass('show-on-mobile');
+                e.preventDefault();
+            });
+        });
+        $(window).resize(function () {
+            $(".menu > ul > li").children("ul").hide();
+            $(".menu > ul").removeClass('show-on-mobile');
+        });
+
+    </script>
+</body>
+
+
+</html>
