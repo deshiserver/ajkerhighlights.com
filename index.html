@@ -57,6 +57,9 @@
     <link rel="stylesheet" href="themes/magz/scripts/owlcarousel/dist/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="themes/magz/scripts/magnific-popup/dist/magnific-popup.css">
     <link rel="stylesheet" href="themes/magz/scripts/sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="themes/magz/css/style.css">
     <link rel="stylesheet" href="themes/magz/css/skins/all.css">
     <link rel="stylesheet" href="themes/magz/css/demo.css">
@@ -90,7 +93,7 @@
     <!-- Header -->
     <header class="primary">
         <div class="firstbar">
-            <div class="container">
+            <!-- <div class="container">
                 <div class="row">
                     <div class="hidden-xs col-md-3 col-sm-12">
                         <div class="brand">
@@ -111,6 +114,37 @@
                                 </div>
                             </div>
                         </form>
+                    </div>
+                </div>
+            </div> -->
+            <div class="container">
+                <div class="row">
+                    <!-- Search Bar menu  -->
+                    <div class="col-md-4">
+                        <!-- Header Search Bar  -->
+                        <div class="header-search ">
+
+                            <form class="search-container" action="//llamaswill.tumblr.com/search">
+                                <input id="search-box" type="text" class="search-box" name="q" />
+                                <label for="search-box"><span
+                                        class="glyphicon glyphicon-search search-icon fas fa-search"><i
+                                            class=""></i></span></label>
+                                <input type="submit" id="search-submit" />
+                            </form>
+                        </div>
+                        <div class="header-date">
+                            <p>শুক্রবার, ১৩ আগস্ট ২০২১</p>
+                        </div>
+                    </div>
+                    <!-- Center logo  -->
+                    <div class="col-md-4 text-center">
+                        <div class="header-top-logo">
+                            <img src="image/logo.png" alt="">
+                        </div>
+                    </div>
+                    <!-- Login Button  -->
+                    <div class="col-md-4">
+
                     </div>
                 </div>
             </div>
@@ -1390,7 +1424,8 @@
             $(".menu > ul > li").children("ul").hide();
             $(".menu > ul").removeClass('show-on-mobile');
         });
-
+        // Search 
+        document.addEventListener("touchstart", function () { }, true);
     </script>
 </body>
 
