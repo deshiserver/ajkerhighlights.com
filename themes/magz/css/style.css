@@ -1288,7 +1288,9 @@ section.search .search-result {
     color: #f73f52;
 }
 .headline {
-    margin-bottom: 20px;
+	/* margin-bottom: 12px; */
+	background: #ededed;
+	padding: 6px;
 }
 .headline .item {
     padding: 5px;
@@ -1401,9 +1403,19 @@ article .detail {
     font-size: 14px;
 }
 article .detail {
-    display: flex;
-    margin-bottom: 5px;
-    font-size: 12px;
+	display: flex;
+	margin-bottom: 5px;
+	font-size: 12px;
+}
+.latest-detail {
+	display: flex;
+	margin-bottom: 5px;
+	font-size: 12px;
+	align-items: center;
+	justify-content: space-between;
+}
+.time span{
+    color: #FC624D;
 }
 article .time,
 article .category {
