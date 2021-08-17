@@ -1761,7 +1761,7 @@ article footer .btn-primary:focus {
 }
 .featured .details h1 a {
     text-decoration: none;
-    color: #fff;
+    color: #fff !important;
 }
 .topbar {
     position: relative;
