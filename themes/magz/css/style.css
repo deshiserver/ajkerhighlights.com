@@ -1426,7 +1426,9 @@ article .category {
     margin: 0 10px;
 }
 article .category a {
-    color: #f73f52;
+    color: #ffffff !important;
+    background-color: rgb(0, 0, 0) !important;
+    padding: 5px;
 }
 article .time {
     margin: 0;
@@ -2186,7 +2188,7 @@ section .container {
     font-size: 18px;
 }
 .article-list {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     position: relative;
 }
 .article-list:last-child {
