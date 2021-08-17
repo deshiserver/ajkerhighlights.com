@@ -4465,7 +4465,7 @@ blockquote {
 
 
 a {
-  color: #333;
+  color: #333 !important;
 }
 .menu {
     width: 100%;
@@ -4589,6 +4589,8 @@ a {
 }
 .menu > ul > li > ul > li a:hover{
 	color:#03a9f4;
+    border-bottom: 0px solid !important;
+    border: none !important;
 }
 .menu > ul > li > ul > li > ul {
   display: block;
@@ -4628,11 +4630,6 @@ a {
   border: 0;
   padding: 1em 0;
 }
-
-
-
-
-
 /* ––––––––––––––––––––––––––––––––––––––––––––––––––
 Mobile style's
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -4689,4 +4686,60 @@ Mobile style's
   .menu .show-on-mobile {
     display: block;
   }
+}
+
+
+
+/* Footer  */
+section.footer-bg {
+    background-color: #ededed;
+    background-color: rgb(0, 0, 0);
+    padding: 50px 0px;
+}
+.footer-menu ul li a {
+    text-decoration: none;
+    
+}
+.footer-menu ul li{
+    list-style: none;
+    padding:6px 0px;
+}
+.footer-menu ul li a{
+    color: rgb(126, 126, 126) !important;
+}
+.footer-padding{
+    margin-top: 50px;
+}
+.footer-menu ul h6 {
+    color: #817a7a;
+}
+.padding-top{
+    margin-top: 30px;
+}
+.footer-copyright {
+    border-top: 1px solid #bbbaba;
+    padding: 20px 0px;
+    background-color: #000000;
+    color: #fff;
+}
+
+.footer-social-icon ul li {
+    list-style: none;
+    float: left;
+    padding: 0px 20px;
+}
+.footer-social-icon ul li a{
+    color: #fff !important;
+    font-size: 18px;
+}
+.footer-display{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.text-right{
+    text-align: right !important;
+}
+.footer-social-icon {
+	float: right;
 }
