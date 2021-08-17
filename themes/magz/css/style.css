@@ -483,6 +483,9 @@ header.primary {
 header.primary.up {
     top: -172px;
 }
+.brands a img {
+	width: 100%;
+}
 header.primary.up nav.menu {
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
     border-top-color: transparent;
@@ -578,6 +581,7 @@ section.most-popular .details .inner .detail .time {
 section.most-popular .details .inner p {
     line-height: 26px;
     margin-bottom: 40px;
+    font-size: 16px;
 }
 section.most-popular .details .inner .more {
     font-weight: 600;
@@ -1297,14 +1301,14 @@ section.search .search-result {
     width: 100%;
 }
 .headline .item a {
-    color: #191e21;
-    font-size: 14px;
-    text-transform: capitalize;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    width: 100%;
-    display: inline-block;
+	color: #191e21;
+	font-size: 17px;
+	text-transform: capitalize;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	width: 100%;
+	display: inline-block;
 }
 .headline .item a .badge {
     background-color: #f73f52;
@@ -1856,6 +1860,7 @@ article footer .btn-primary:focus {
 	align-items: center;
 	justify-content: space-between !important;
 	text-align: center;
+	padding: 50px 0px;
 }
 .menu .container {
     position: relative;
@@ -1908,6 +1913,7 @@ article footer .btn-primary:focus {
     font-family: "Raleway", sans-serif;
     position: relative;
     z-index: 1;
+    font-size: 18px;
 }
 .menu ul > li > a i {
     margin-left: 5px;
@@ -4519,14 +4525,15 @@ a {
   color: #333;
 }
 .menu > ul {
-  margin: 0 auto;
-  width: 100%;
-  list-style: none;
-  padding: 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	margin: 0 auto;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+	position: relative;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	margin-left: 40px;
 }
 .menu > ul:before,
 .menu > ul:after {
