@@ -2743,6 +2743,10 @@ aside .ads figcaption {
         height: 53px;
         line-height: 52px;
     }
+   .display-flex {
+        display: flex !important;
+        align-items: center !important;
+    }
     header.primary.up nav.menu ul:not(.dropdown-menu) > li > a .badge {
         top: 2px;
     }
